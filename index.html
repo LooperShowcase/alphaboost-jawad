@@ -17,14 +17,26 @@
   <body>
     <ul>
       <li><a class="active" href="#home">Home</a></li>
-      <li><a href="sign up.html">sign up </a></li>
+      <li><a href="signup.html">sign up </a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#about">About</a></li>
+<li id="myfloat" id="colorpicker"></li>
+<li id="myfloat"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" 
+  id="profilepic">
+</li>
     </ul>
 
-    <button type="button" onclick="changebg()"></buttontype> press me to change background</button>
+
+
+
+
+    <button type="button" onclick="changebg()">
+      press me to change background
+    </button>
 
     <center><h1>air jordan</h1></center>
+    <input onchange="changecolor()" id="ChangeBG" type="color" />
+
     <h1>
       Air Jordan is an American brand of basketball shoes, athletic, casual, and
       style clothing produced by Nike. Founded in Chicago, Air Jordan was
@@ -46,16 +58,14 @@
         allowfullscreen
       ></iframe>
     </center>
-
+<footer>
+  welcome to my webesite 
+</footer>
     <script>
-      function changebg() {
-        document.body.style.background = "white";
-      } 
-
-
-
-
-      
+      function changecolor() {
+        var newcolor = document.getElementById("ChangeBG").value;
+        document.body.style.background = newcolor;
+      }
     </script>
   </body>
 </html>
